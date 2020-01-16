@@ -4406,3 +4406,10 @@ const githubData = [
       }
     }
   ]
+
+for (let i = 0; i < githubData.length; i++){
+    if (githubData[i].id === "8030403992") {
+        console.log("githubData[" + i + "] has the id 8030403992");
+        console.log("It's commit message is: " + githubData[i].payload.commits[0].message);
+    }
+}
